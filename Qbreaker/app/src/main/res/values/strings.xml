@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Qbreaker</string>
+
+    <string name="err_msg_name">Enter your username</string>
+    <string name="err_msg_namelength">username must be more than 4 characters</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="err_msg_passwordlength">Minimum Password Length is 6 characters.</string>
+
+    <string name="drawer_opened">Drawer Opened</string>
+    <string name="drawer_closed">Drawer Closed</string>
+
+    <string name="about_one">As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</string>
+    <string name="about_two">Finally, on the fine day of (date), QBreaker stood complete and ready-to-be-used. It was ready to connect colleges, teachers and students and make learning happen through its connected platform.</string>
+    <string name="about_three">The future roadmap of QBreaker is all about improvising. A little bit of change every now and then is required by everyone and that is what will make users like it even more. Every now and then, users will be given pleasant surprises with new, addictive features and better designs. So, expect one anytime.</string>
+    <string name="about_four">Mission of QBreaker is to empower knowledge with technology and to enrich teaching and learning experience of educators and young learners by providing a well-connected social LMS platform.</string>
+    <string name="about_five">QBreaker\'s vision is to become the world\'s best Learning Management System software and remain dedicated to enhance learning experience and globalize learning by connecting colleges.</string>
+
+    <string-array name="user_type">
+        <item>Select User Type</item>
+        <item>Admin</item>
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="noticelist_date">
+        <item>19/12/2016</item>
+        <item>18/12/2016</item>
+        <item>17/12/2016</item>
+        <item>16/12/2016</item>
+        <item>15/12/2016</item>
+        <item>14/12/2016</item>
+        <item>13/12/2016</item>
+        <item>12/12/2016</item>
+        <item>11/12/2016</item>
+    </string-array>
+
+
+    <string-array name="noticelist_title">
+        <item>College Notice title one</item>
+        <item>College Notice title two</item>
+        <item>College Notice title three</item>
+        <item>College Notice title four</item>
+        <item>College Notice title five</item>
+        <item>College Notice title six</item>
+        <item>College Notice title seven</item>
+        <item>College Notice title eight</item>
+        <item>College Notice title nine</item>
+    </string-array>
+
+    <string-array name="noticelist_detail">
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+        <item>As soon as the initiation stage got over, the masterminds became active and started working. They put their sleeves up, gathered their tools and started fitting the pieces together. Gathering study materials, finding roommates, asking questions, knowing teachers – they left no stones unturned in building the virtual forms of colleges from ground up.</item>
+    </string-array>
+
+
+</resources>
