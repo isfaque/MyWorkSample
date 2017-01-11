@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jerne"
+            android:textSize="50dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="your journey made smart"
+            android:textStyle="italic|bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="171dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5px"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2px"
+            android:layout_marginBottom="50dp">
+
+            <Button
+                android:id="@+id/btn_user_signup_selection"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:elevation="8dp"
+                android:textSize="18dp"
+                android:text="Sign up" />
+
+            <Button
+                android:id="@+id/btn_user_login_selection"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="155dp"
+                android:elevation="8dp"
+                android:textSize="18dp"
+                android:text="Login" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
