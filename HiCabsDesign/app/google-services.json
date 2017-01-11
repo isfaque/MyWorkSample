@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "218828954721",
+    "project_id": "hi-cabsgcm"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218828954721:android:439ed24efea442bc",
+        "android_client_info": {
+          "package_name": "com.example.admin.hicabsdesign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOxNHz5UvjPzbwZ4Xu9vdGjQw_2xFIe8w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

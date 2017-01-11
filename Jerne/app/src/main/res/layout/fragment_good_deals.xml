@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCreamWhite">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight">
+
+        <com.example.admin.jerne.CustomAutoComplete.CustomAutoCompleteTextView
+            android:id="@+id/edit_source_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Search Entertainment"
+            android:textColorHint="@color/colorPrimaryLight"
+            android:drawableLeft="@drawable/places_ic_search"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_layout"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/jerne_destination_marker"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/layout_destination"
+        android:scrollbars="vertical"/>
+
+    <!--<ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/search_layout">
+    </ListView>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/car_icon"/>
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_user_bookinglist_bookingid"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txt_user_bookinglist_bookingstatus"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="pending"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_user_bookinglist_pickupcity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_user_bookinglist_bookingprice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="pending"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_user_bookinglist_dropcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/txt_user_bookinglist_bookingdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/txt_user_bookinglist_bookingtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

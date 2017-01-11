@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorCreamWhite"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:elevation="6dp"
+            android:id="@+id/topPanel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/common_action_bar_splitter"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="From: "
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryBlue"
+                    android:layout_marginLeft="3dp"
+                    />
+
+                <com.example.admin.jerne.CustomAutoComplete.CustomAutoCompleteTextView
+                    android:id="@+id/edit_source_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Source Address"
+                    android:drawableEnd="@drawable/places_ic_search"
+                    android:drawablePadding="5dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/black_white_gradient"
+                android:layout_marginTop="4dp"
+                >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="To: "
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryBlue"
+                    android:layout_marginLeft="3dp"
+                    />
+
+                <com.example.admin.jerne.CustomAutoComplete.CustomAutoCompleteTextView
+                    android:id="@+id/edit_destination_add"
+                    android:layout_below="@+id/edit_source_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Destination Address"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/common_action_bar_splitter"
+                android:layout_marginTop="4dp"
+                >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time: "
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryBlue"
+                    android:layout_marginLeft="3dp"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_time"
+                    android:layout_below="@+id/edit_source_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Right Now"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/img_walk_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/j_walk"/>
+
+                <ImageView
+                    android:id="@+id/img_cycle_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/j_cycle"/>
+
+                <ImageView
+                    android:id="@+id/img_car_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/j_car"/>
+
+                <ImageView
+                    android:id="@+id/img_bus_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/j_bus"/>
+
+                <ImageView
+                    android:id="@+id/img_train_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/j_train"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_below="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:id="@+id/my_bottom_layout">
+
+            <fragment
+                android:id="@+id/user_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:elevation="4dp"
+                />
+
+
+            <LinearLayout
+                android:layout_above="@+id/user_map"
+                android:id="@+id/bottom_panel"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                android:background="@color/colorCreamWhite"
+                android:gravity="bottom"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ITINERARY"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="3dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="Fastest"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textAlignment="center"/>
+
+                            <ImageView
+                                android:id="@+id/img_walk_mode2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/j_fastest"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="Cheapest"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textAlignment="center"/>
+
+                            <ImageView
+                                android:id="@+id/img_cycle_mode2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/j_cheapest"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="Favorite"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textAlignment="center"/>
+
+                            <ImageView
+                                android:id="@+id/img_car_mode2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/j_favorite"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="Greenie"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textAlignment="center"/>
+
+                            <ImageView
+                                android:id="@+id/img_bus_mode2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/j_greenie"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:text="Group"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textAlignment="center"/>
+
+                            <ImageView
+                                android:id="@+id/img_train_mode2"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/j_group"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

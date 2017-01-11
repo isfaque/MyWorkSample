@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5fb0c9"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:text="Driver Setting"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_driver_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/OrangeButton"
+                    android:text="My Profile"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_driver_change_password"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/OrangeButton"
+                    android:text="Change Password"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:src="@drawable/setting_icon" />
+    </RelativeLayout>
+
+</ScrollView>
